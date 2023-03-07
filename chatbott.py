@@ -5,7 +5,7 @@ from rich import print
 from rich.console import Console
 from rich.text import Text
 openai.organization = "org-P2NXGLnMMliHejCMU7yPAOPL"
-openai.api_key = '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'
+openai.api_key = os.getenv('OPENAI_API_KEY')
 # openai.Model.list()
 # openai.Model.retrieve("text-davinci-003")
 # openai.Engine.list()
